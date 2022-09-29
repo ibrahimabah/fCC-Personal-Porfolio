@@ -9,9 +9,8 @@
     </head>
     <body>
         <header>
-            <img src="./photos/my-avatar.jpg" alt="profile-picture">
             <h1>I am Ibrahima</h1>
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="#welcome-section">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -21,10 +20,28 @@
         </header>
         <main>
             <section id="welcome-section">
+                <a href="" id="profile-link" target="_blank">
+                    <img src="./photos/my-avatar.jpg" alt="profile-picture">
+                </a>
                 <h1>Welcome to my Portfolio</h1>
                 <p>I am a Junior Developer. With the help of Online Resources Like freeCodeCamp, I was able to come this far and build the very thing you are looking at right now. </p>
             </section>
             <section id="projects">
+                <h3 class="projects-header">
+                    These are the projects I worked on throughout the freeCodeCamp's first Curriculum. 
+                </h3>
+                <div class="project-log">
+                    <a href="https://ibrahimabah.github.io/fCC-SurveyForm/" class="project-tile" alt="survey-form-preview">
+                        <img src="./photos/survey-form.png" alt="survey-form">
+                    </a>
+                    <a href="" class="project-repository">
+                        <p class="project-title"><span class="code"><</span>
+                            Survey Form <span class="code">/></span>
+                        </p>
+                    </a>
+                </div>
+            </section>
+            <section class="contact">
 
             </section>
         </main>
