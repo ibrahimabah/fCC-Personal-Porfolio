@@ -1,4 +1,32 @@
+/* reset */
+* {
+    margin: 0;
+}
+/* body */
+body {
+    background-color: #2a2a68;
+    color: rgb(168, 172, 175);
+    font-family: 'Courier New', Courier, monospace;
+}
+
 img {
     width: max(100px, 18vw);
     padding: 0.1rem;
+}
+
+a {
+    color: rgb(117, 194, 213);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.code {
+    ;
+}
+
+.code:hover {
+
 }
