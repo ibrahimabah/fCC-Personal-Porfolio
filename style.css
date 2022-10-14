@@ -4,6 +4,8 @@
     --brown: #c2914dce;
     --dark: rgb(36, 35, 35);
     --blue: #636ed1;
+    --black: #000;
+    --white: #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -53,7 +55,7 @@ header > h3 {
   }
 
 #navbar {
-    width: 50%;
+    width: 100%;
     max-width: 300px;
     height: 50px;
 }
@@ -92,15 +94,6 @@ a {
     text-decoration: none;
 }
 
-
-.code {
-    
-}
-
-.code:hover {
-
-}
-
 /* media query*/
 @media (max-width: 61.25em){
 html {
@@ -115,33 +108,38 @@ html {
 }
 
 /* -------------------------main------------------------- */
-main {
-    top: auto;
-    padding: 50px;
-    margin: 3px;
-}
-
-section {
-    width: 100%;
-    margin: 0 auto 10px auto;
-    max-width: 600px;
-}
 
 /* welcome-section */
 #welcome-section {
-    background-color: var(--brown);
+    background-color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    color: var(--white);
+    background-image: linear-gradient(180deg, var(--brown) 0%, var(--black) 100%);
 }
 
 img {
     width: max(100px, 18vw);
     padding: 0.1rem;
     border-radius: 9%;
+}
+
+#welcome-section > h3 {
+    margin-top: 0.2rem;
+    padding: 3.5rem;
+}
+
+#welcome-section > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 0.2rem;
+    padding: 3.5rem;
+    color: var(--gray);
 }
 
 /* projects */
