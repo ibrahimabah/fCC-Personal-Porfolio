@@ -3,7 +3,7 @@
     --gray: #aba6a6;
     --brown: #c2914dce;
     --dark: rgb(36, 35, 35);
-    --blue: rgb(24, 61, 115);
+    --blue: #636ed1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
