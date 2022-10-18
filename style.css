@@ -36,6 +36,37 @@ body {
     line-height: 1.1;
 }
 
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  font-style: italic;
+}
 /* -------------------------header------------------------- */
 header {
     width: 100%;
@@ -52,7 +83,10 @@ header > h3 {
     color: var(--brown);
     font-size: min(5vw, 1.2em);
     text-align: center;
+    margin: 3rem;
   }
+
+/*-------------------------nav-------------------------*/
 
 #navbar {
     width: 100%;
@@ -129,12 +163,13 @@ html {
 
 #welcome-section > h3 {
     margin-top: 0.2rem;
-    padding: 3.5rem;
+    padding: 3.5rem 0.75rem 1.5rem 0.75rem;
+    font-weight: bolder;
 }
 
  #welcome-section > p {
+    font-weight: 300;
     text-align: center;
-    font-size: 1.5rem;
     font-style: italic;
     margin: 0 0.2rem;
     padding: 3.5rem;
@@ -154,11 +189,11 @@ html {
     padding: 0.1rem;
 }
 
-#projects > h3 {
+#projects > h2 {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   color: var(--gray);
-  border-bottom: 0.2rem solid var(--gray);
+  /*border-bottom: 0.2rem solid var(--gray);*/
 }
 
 @media (max-width: 28.75em) {
@@ -189,7 +224,7 @@ html {
 
 .project-tile {
   background-image: linear-gradient(90deg, var(--gray) 0%, var(--black) 100%);
-  border-radius: 1px;
+  /* border-radius: 1px; */
 }
 
 .code {
@@ -217,4 +252,53 @@ html {
 .project-title:hover {
   background-color: var(--brown);
   color: var(--dark);
+}
+
+/* contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  color: var(--white);
+  background-image: linear-gradient(5deg, var(--brown) 0%, var(--black) 100%);
+}
+
+@media (max-width: 28.75em) {
+  #contact-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  color: var(--gray);
+  /* text-shadow: 2px 2px 1px #1f1f1f; */
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  color: var(--blue);
+  background: var(--gray);
+  /* transform: translateY(8px); */
 }
